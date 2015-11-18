@@ -1,0 +1,22 @@
+# 1
+apple banana kiwi jack
+22 3 5 3 3 5 3 3 5 3 jack
+3 5 3 apple Apricot Avocado
+34 5555 666 333
+Coconut Melon Melon
+# 2
+mango kiwi grape Lime
+3 3 5 3 apple Date Lychee Lychee
+3 3 5 3 3 5 3 kiwi
+# 3
+Apricot Cherry Avocado Avocado
+3 5 3 3 5 3 3 5 3 
+Date Date
+# 4
+Apricot Apricot Apricot
+4 4 5 4 4 5 4
+33 5 Durian 
+# 5
+Guava Cherry Cherry Durian
+5 5 5 5 5 5 5
+Coconut Coconut

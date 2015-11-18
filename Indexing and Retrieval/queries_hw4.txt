@@ -1,0 +1,4 @@
+portabl oper system
+code optim for space effici 
+parallel algorithm 
+parallel processor in inform retriev 
