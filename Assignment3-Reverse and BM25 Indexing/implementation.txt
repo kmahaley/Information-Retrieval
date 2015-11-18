@@ -1,0 +1,39 @@
+Implementation:
+
+"indexer.java" 
+indexer tccorpus.txt index.out
+
+input=tccorpus.txt 
+output=index.out as object file
+
+1) "indexer" map datastructure will keep doc id and list of all tokens. 
+HashMap<String, List<String>> = { doc_id,list of tokens }
+2) "indexerinteger" map data structure will keep doc id and number of token. 
+HashMap<String, Integer> = { doc_id,number of token is doc_id }
+3) "invertedindex" is map of key as token and value as map of doc_id and number of times token occured in perticular
+doc_id. 
+HashMap<String, HashMap<String, Integer>> = {token, {doc_id,number of occurance}}
+4) indexfunction will make indexer and indexerinterger maps, this takes input as tccorpus.txt
+5) invertedindexerfunction function will make "invertedindex" map from the indexer and indexerinterger maps provided by above function.
+6) write_object_to_file function writes "indexerinteger" ,"invertedindex"  as list into index.out object file. This file is unreadable.
+7) This file "index.out" is used by bm25.java program to get both maps out of it
+
+bm25.java
+bm25 index.out queries.txt 100 results.eval
+
+input=queries.txt,index.out,100
+output=results.eval
+
+1) read_from_input_file this function will read index.out object file and prepare "readindexerinteger" (same as "indexerinteger" )
+and "readinvertedindex" (same as "invertedindex" )
+
+HashMap<String, Integer> = { doc_id,number of token is doc_id }
+HashMap<String, HashMap<String, Integer>> = {token, {doc_id,number of occurance}}
+
+2) read_myquery_file function will read from queries.txt file and one by one query is sent to calculateBM25 function.
+3) In this query file we have 7 queries. These are added to the list and processed one by one. read_myquery_file this send all token from
+one query to calculateBM25 function where individual bm25 index is calculated for each token. Sum of all these BM25 index of all tokens in the
+query is added to give. list of all documents with bm25 index for that query.
+4) These bm25 index values for each queries are stored in "bm25index" map {doc_id, index_value}
+5) sortbyvalue and rank comparator.java sort "bm25index" values according to their descending values by index_value
+6) At the end we are printing map in results.eval file as well as in console.
