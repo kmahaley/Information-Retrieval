@@ -1,33 +1,33 @@
-<html>
-<pre>
+ 
+ 
 
 
-Recovery of Reentrant List Structures in SLIP
+recovery of reentrant list structures in slip
 
-One consequence of the reference-count-based
-space-recovery system employed by SLIP is that 
+one consequence of the reference-count-based
+space-recovery system employed by slip is that 
 reentrant list structures are not recovered even when
-explicitly erased.  LISP-like garbage-collection 
-schemes are free of this impediment.  They however,
+explicitly erased.  lisp-like garbage-collection 
+schemes are free of this impediment.  they however,
 depend on being able to find and mark nodes that 
-are reachable from program variables.  By tracing all
+are reachable from program variables.  by tracing all
 descendants from program variables may then be 
-identified and collected.  The list-creating function
-LIST of SLIP may be amended to mark those lists 
+identified and collected.  the list-creating function
+list of slip may be amended to mark those lists 
 for which the programmer wishes to assume responsibility.
- Given this modification, a LISP-like garbage 
+ given this modification, a lisp-like garbage 
 collector that recovers abandoned reentrant list structures
-may then be appended to the SLIP system.
+may then be appended to the slip system.
 
-CACM July, 1969
+cacm july, 1969
 
-Weizenbaum, J.
+weizenbaum, j.
 
-list processing, SLIP, garbage-collection
+list processing, slip, garbage-collection
 
 4.22 4.40
 
-CA690702 JB February 17, 1978  9:39 AM
+ca690702 jb february 17, 1978  9:39 am
 
 1024	4	1878
 1024	4	1878
@@ -87,5 +87,5 @@ CA690702 JB February 17, 1978  9:39 AM
 1878	6	1878
 731	6	1878
 
-</pre>
-</html>
+ 
+ 

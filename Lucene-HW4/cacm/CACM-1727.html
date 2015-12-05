@@ -1,42 +1,42 @@
-<html>
-<pre>
+ 
+ 
 
 
-One Way of Estimating Frequencies of Jumps in a Program
+one way of estimating frequencies of jumps in a program
 
-For the segmentation of a program it is useful
+for the segmentation of a program it is useful
 to have a reasonable estimation of the values 
-of S(ij), where S(ij) is the mean value of the number
+of s(ij), where s(ij) is the mean value of the number
 of jumps from the i-th instruction on to the j-th 
-instruction in the run time.  In the cases where the
-S(ij) are estimated directly, the structure of the 
+instruction in the run time.  in the cases where the
+s(ij) are estimated directly, the structure of the 
 whole program must be generally taken into account;
 therefore it is very difficult for the programmer 
 and/or the translator to obtain a good estimation of
-the S(ij).  It is easier to estimate not S(ij) but 
-the quantities P(ij)=S(ij)*C(i)/SUM[S(ij), j=1,N], where
-C(i) is an arbitrary positive constant for each 
-i.  Although the P(ij) are, for each i, proportional to
-S(ij), the estimation of P(ij) is easier, because 
+the s(ij).  it is easier to estimate not s(ij) but 
+the quantities p(ij)=s(ij)*c(i)/sum[s(ij), j=1,n], where
+c(i) is an arbitrary positive constant for each 
+i.  although the p(ij) are, for each i, proportional to
+s(ij), the estimation of p(ij) is easier, because 
 we must estimate only the "probabilities" of events
 where instruction i is executed after instruction 
-I(i).  This estimation can often be done without considering
-the structure of the whole program.  In 
+i(i).  this estimation can often be done without considering
+the structure of the whole program.  in 
 the first part of the paper, using the theory of the
-Markov chains, an algorithm for the computation 
-of the S(ij) from the P(ij) is found, and some ways
-of obtaining estimates of the P(ij) are given.  In 
+markov chains, an algorithm for the computation 
+of the s(ij) from the p(ij) is found, and some ways
+of obtaining estimates of the p(ij) are given.  in 
 the second part a variant of this algorithm is derived,
 avoiding the necessity of computation involving 
 large matrices.
 
-CACM July, 1968
+cacm july, 1968
 
-Kral, J.
+kral, j.
 
 object program reduction, supervisor calls decreasing,
 jump frequencies estimation, control transfers 
-estimation, optimal program segmentation, Markov chain
+estimation, optimal program segmentation, markov chain
 program correspondence, program graph, one-entry 
 subgraph, locally estimated jump frequencies, supervisor
 overhead decreasing, program segmentation algorithm, 
@@ -44,11 +44,11 @@ jump frequencies, program segmentation problem
 
 4.11 4.19 4.39 4.49
 
-CA680702 JB February 22, 1978  3:05 PM
+ca680702 jb february 22, 1978  3:05 pm
 
 1727	5	1727
 1727	5	1727
 1727	5	1727
 
-</pre>
-</html>
+ 
+ 

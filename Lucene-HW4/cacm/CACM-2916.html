@@ -1,36 +1,36 @@
-<html>
-<pre>
+ 
+ 
 
 
-A Fast String Searching Algorithm
+a fast string searching algorithm
 
-An algorithm is presented that searches for
+an algorithm is presented that searches for
 the location, "i," of the first occurrence of a 
 character string, "pat," in another string, "string."
- During the search operation, the characters of 
+ during the search operation, the characters of 
 pat are matched starting with the last character of
-pat.  The information gained by starting the match 
+pat.  the information gained by starting the match 
 at the end of the pattern often allows the algorithm
 to proceed in large jumps through the text being 
-searched.  Thus the algorithm has the unusual property that,
+searched.  thus the algorithm has the unusual property that,
 in most cases, not all of the first i characters 
-of string are inspected.  The number of characters actually
+of string are inspected.  the number of characters actually
 inspected (on the average) decreases as a 
-function of the length of pat.  For a random English
+function of the length of pat.  for a random english
 pattern of length 5, the algorithm will typically 
 inspect i/4 characters of string before finding a match at
-i.  Furthermore, the algorithm has been implemented 
+i.  furthermore, the algorithm has been implemented 
 so that (on the average) fewer than i+patlen machine
-instructions are executed.  These conclusions are 
+instructions are executed.  these conclusions are 
 supported with empirical evidence and a theoretical
 analysis of the average behavior of the algorithm. 
- The worst case behavior of the algorithm is linear in
+ the worst case behavior of the algorithm is linear in
 i+patlen, assuming the availability of array space 
 for tables linear in patlen plus the size of the alphabet.
 
-CACM October, 1977
+cacm october, 1977
 
-Boyer, R. S.
+boyer, r. s.
 
 bibliographic search, computational complexity,
 information retrieval, linear time bound, pattern 
@@ -38,7 +38,7 @@ matching, text editing
 
 3.74 4.40 5.25
 
-CA771010 JB December 27, 1977  9:43 AM
+ca771010 jb december 27, 1977  9:43 am
 
 2916	4	2916
 2746	5	2916
@@ -48,5 +48,5 @@ CA771010 JB December 27, 1977  9:43 AM
 3162	5	2916
 2916	6	2916
 
-</pre>
-</html>
+ 
+ 

@@ -1,45 +1,45 @@
-<html>
-<pre>
+ 
+ 
 
 
-A Model and Stack Implementation of Multiple Environments
+a model and stack implementation of multiple environments
 
-Many control and access environment structures
+many control and access environment structures
 require that storage for a procedure activation 
 exist at times when control is not nested within the
-procedure activated.  This is straightforward to 
+procedure activated.  this is straightforward to 
 implement by dynamic storage allocation with linked
 blocks for each activation, but rather expensive 
-in both time and space.  This paper presents an implementation
+in both time and space.  this paper presents an implementation
 technique using a single stack to hold 
 procedure activation storage which allows retention
 of that storage for durations not necessarily tied 
-to control flow.  The technique has the property that,
+to control flow.  the technique has the property that,
 in the simple case,it runs identically to the 
 usual automatic stack allocation and deallocation procedure.
- Applications of this technique to multitasking, 
+ applications of this technique to multitasking, 
 coroutines, backtracking, label-valued variables, and
-functional arguments are discussed.  In the initial 
+functional arguments are discussed.  in the initial 
 model, a single real processor is assumed, and the implementation
 assumes multiple-processes coordinate 
-by passing control explicitly to one another.  A multiprocessor
+by passing control explicitly to one another.  a multiprocessor
 implementation requires only a few changes 
 to the basic technique, as described.
 
-CACM October, 1973
+cacm october, 1973
 
-Bobrow, D. G.
-Wegbreit, B.
+bobrow, d. g.
+wegbreit, b.
 
 control structures, environments, stack allocation,
 dendrarchy, retention, dynamic storage allocation, 
-access environments, FUNARG problem, multitasking,
+access environments, funarg problem, multitasking,
 coroutines, backtracking, label-valued variables, 
 functional arguments, multiprocessor systems, extensible control structures
 
 4.1 4.2 4.22 4.3 4.32 5.24
 
-CA731002 JB January 23, 1978  8:27 AM
+ca731002 jb january 23, 1978  8:27 am
 
 1972	4	2438
 2156	4	2438
@@ -83,5 +83,5 @@ CA731002 JB January 23, 1978  8:27 AM
 3185	6	2438
 731	6	2438
 
-</pre>
-</html>
+ 
+ 

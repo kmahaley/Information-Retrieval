@@ -1,36 +1,36 @@
-<html>
-<pre>
+ 
+ 
 
 
-A Use of Fast and Slow Memories in List-Processing Languages
+a use of fast and slow memories in list-processing languages
 
-A scheme is described which permitting a substantial
+a scheme is described which permitting a substantial
 increase in memory space utilized to store 
-list-structured data.  It consists in reducing to one
+list-structured data.  it consists in reducing to one
 level a nonhomogeneous store composed of fast (core) 
-and slow (disk or drum) memories.  The space available
+and slow (disk or drum) memories.  the space available
 in slow memory is divided into pages each containing 
-a given number of machine words.  The reduction to a
+a given number of machine words.  the reduction to a
 one-level memory is performed by a program which 
 leaves the most often called pages in the fast memory.
- When a new page from slow store is requested, 
+ when a new page from slow store is requested, 
 the page in core having the longest period of inactivity
-is transferred back to the slow store.  The 
+is transferred back to the slow store.  the 
 complete scheme has been implemented in connection with
-a LISP embedding into ALGOL, using an IBM 7044 
-with 32k of core memory and disks.  Gains in memory space
-were about 100-fold.  As often happens in programming 
+a lisp embedding into algol, using an ibm 7044 
+with 32k of core memory and disks.  gains in memory space
+were about 100-fold.  as often happens in programming 
 applications the price of the additional space is computer
-time.  Although the disks have an access time 
+time.  although the disks have an access time 
 10^4 times slower than core, tests indicate that the
 actual slow down varied from 3 to 10, depending 
 on the number of pages available in the fast store.
 
-CACM February, 1967
+cacm february, 1967
 
-Cohen, J.
+cohen, j.
 
-CA670202 JB February 28, 1978  4:06 PM
+ca670202 jb february 28, 1978  4:06 pm
 
 1626	5	1641
 1641	5	1641
@@ -115,5 +115,5 @@ CA670202 JB February 28, 1978  4:06 PM
 763	6	1641
 799	6	1641
 
-</pre>
-</html>
+ 
+ 

@@ -1,0 +1,10 @@
+3- Values of P@20 and MAP
+
+precision @k where k=20
+{12=0.15, 13=0.25, 19=0.45}
+
+
+MAP-Mean Average Precision
+MAP=0.5113286880145234
+
+MAP=(Avg precision(12)+Avg precision(13)+Avg precision(19))/3

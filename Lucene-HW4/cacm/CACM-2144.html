@@ -1,38 +1,38 @@
-<html>
-<pre>
+ 
+ 
 
 
-On Accurate Floating-Point Summation
+on accurate floating-point summation
 
-The accumulation of floating-point sums is
+the accumulation of floating-point sums is
 considered on a computer which performs t-digit 
-base B floating-point addition with exponents in the range
--m to M.  An algorithm is given for accurately 
-summing N t-digit floating-point numbers.  Each of
-these N numbers is split into q parts, forming qN 
-t-digit floating-point numbers.  Each of these is then
+base b floating-point addition with exponents in the range
+-m to m.  an algorithm is given for accurately 
+summing n t-digit floating-point numbers.  each of
+these n numbers is split into q parts, forming qn 
+t-digit floating-point numbers.  each of these is then
 added to the appropriate one of n auxiliary t-digit 
-accumulators.  Finally, the accumulators are added together
-to yield the computed sum.  In all, qN+n-1 
-t-digit floating-point additions are performed.  Under
+accumulators.  finally, the accumulators are added together
+to yield the computed sum.  in all, qn+n-1 
+t-digit floating-point additions are performed.  under
 usual conditions, the relative error in the computed 
-sum is at most [(t+1)/v]B^(1-t) for some v.  Further,
+sum is at most [(t+1)/v]b^(1-t) for some v.  further,
 with an additional q+n-1 t-digit additions, the 
 computed sum can be corrected to full t-digit accuracy.
- For example, for the IBM/360 (B=16, t=14, M=63, 
+ for example, for the ibm/360 (b=16, t=14, m=63, 
 m=64), typical values for q and n are q=2 and n=32. 
-In this case, (*) becomes N <= 32,768, and we have 
-[(t+1)/v]B^(1-t) = 4x16^-13.
+in this case, (*) becomes n <= 32,768, and we have 
+[(t+1)/v]b^(1-t) = 4x16^-13.
 
-CACM November, 1971
+cacm november, 1971
 
-Malcolm, M. A.
+malcolm, m. a.
 
 floating-point summation, error analysis
 
 5.11 5.19
 
-CA711105 JB February 2, 1978  10:48 AM
+ca711105 jb february 2, 1978  10:48 am
 
 1328	4	2144
 1333	4	2144
@@ -42,5 +42,5 @@ CA711105 JB February 2, 1978  10:48 AM
 2144	5	2144
 2144	5	2144
 
-</pre>
-</html>
+ 
+ 
