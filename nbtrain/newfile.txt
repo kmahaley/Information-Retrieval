@@ -1,0 +1,14 @@
+neg => 7
+I => 11
+like => 14
+apple => 5
+filename2 => 6
+***************** positive map
+I => 3
+like => 6
+***************** negative map
+neg => 7
+I => 8
+like => 8
+apple => 5
+filename2 => 6
